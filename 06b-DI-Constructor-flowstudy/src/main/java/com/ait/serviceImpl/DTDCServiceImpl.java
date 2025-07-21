@@ -1,0 +1,23 @@
+package com.ait.serviceImpl;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
+
+import com.ait.service.DeliveryService;
+
+//@Service(value = "dtdcServiceByName")
+@Service
+//@Primary
+public class DTDCServiceImpl implements DeliveryService {
+	
+	public DTDCServiceImpl() {
+		System.out.println("DTDCServiceImpl :: 0 param constructor");
+
+	}
+
+	@Override
+	public void deliverCourier(int orderId, String location, String deliveryType) {
+		System.out.println("DTDC and order Id is ::" +orderId +"Location is :" +location +"payment mode is ::" +deliveryType);		
+	}	
+
+}
