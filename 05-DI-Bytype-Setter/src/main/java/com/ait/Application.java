@@ -12,7 +12,7 @@ public class Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
 		Flipkart bean = ctx.getBean(Flipkart.class);
-		bean.sendCourier(0, null, null);
+		bean.sendCourier(4657, "Mumbai", "Cash");
 	}
 
 }

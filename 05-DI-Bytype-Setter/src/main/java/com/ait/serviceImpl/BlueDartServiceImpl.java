@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.ait.service.DeliveryService;
 
-@Service
+@Service(value = "blueDartByName")
 public class BlueDartServiceImpl implements DeliveryService{
 	
 	@Override

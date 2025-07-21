@@ -1,5 +1,7 @@
 package com.ait.component;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.ait.service.DeliveryService;
@@ -7,9 +9,11 @@ import com.ait.service.DeliveryService;
 @Component
 public class Flipkart {
 	
-	DeliveryService deliveryService;	
+	
+	private DeliveryService deliveryService;	
     
-	public void setDeliveryService(DeliveryService deliveryService) {
+	@Autowired
+	public void setDeliveryService(@Qualifier("dtdcServiceByName") DeliveryService deliveryService) {
 		this.deliveryService = deliveryService;
 	}
 	
