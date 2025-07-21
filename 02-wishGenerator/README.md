@@ -1,0 +1,1 @@
+Created component bean and look up using ConfigurableApplicationContext
