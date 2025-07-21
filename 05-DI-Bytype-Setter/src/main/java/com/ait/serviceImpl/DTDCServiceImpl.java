@@ -1,10 +1,13 @@
 package com.ait.serviceImpl;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.ait.service.DeliveryService;
 
-@Service(value = "dtdcServiceByName")
+//@Service(value = "dtdcServiceByName")
+@Service
+@Primary
 public class DTDCServiceImpl implements DeliveryService {
 
 	@Override

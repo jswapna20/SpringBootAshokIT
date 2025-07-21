@@ -13,7 +13,8 @@ public class Flipkart {
 	private DeliveryService deliveryService;	
     
 	@Autowired
-	public void setDeliveryService(@Qualifier("dtdcServiceByName") DeliveryService deliveryService) {
+	public void setDeliveryService(DeliveryService deliveryService) {
+	//public void setDeliveryService(@Qualifier("DTDCServiceImpl") DeliveryService deliveryService) {
 		this.deliveryService = deliveryService;
 	}
 	
