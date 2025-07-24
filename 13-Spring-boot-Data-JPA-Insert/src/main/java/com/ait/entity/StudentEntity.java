@@ -36,10 +36,10 @@ public class StudentEntity {
 		this.stream = stream;
 	}
 	
-	public Long getContactNo() {
+	public long getContactNo() {
 		return contactNo;
 	}
-	public void setContactNo(Long contactNo) {
+	public void setContactNo(long contactNo) {
 		this.contactNo = contactNo;
 	}
 	
