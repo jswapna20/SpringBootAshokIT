@@ -56,8 +56,9 @@ public class Application {
 			all.forEach(data -> System.out.println("Natural sorting==" +data));
 			
 			//customized salary :: DESC order salary
-			List<EmployeeEntity> all1 = repo.findAll(Sort.by(Sort.Direction.DESC, "salary"));
-			all.forEach(data -> System.out.println("DESC order salary==" +data));
+			//List<EmployeeEntity> all1 = repo.findAll(Sort.by(Sort.Direction.DESC, "salary"));
+			List<EmployeeEntity> all1 = repo.findAll(Sort.by(Sort.Direction.DESC, "name"));
+			all1.forEach(data -> System.out.println("DESC order salary==" +data));
 
 			
 			
